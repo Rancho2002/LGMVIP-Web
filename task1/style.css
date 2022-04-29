@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(204, 246, 253);
+}
+header {
+  background-color: black;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border: 2px solid;
+}
+
+ul:nth-child(1) {
+  display: flex;
+  font-size: 20px;
+  /* padding: 2px; */
+}
+ul:nth-child(2) {
+  display: flex;
+  width: 20%;
+}
+li {
+  list-style: none;
+  padding: 8px;
+}
+li > a {
+  text-decoration: none;
+  color: white;
+  /* margin: 0px 32px 0 16px; */
+  padding: 20px;
+}
+#search {
+  text-indent: 4px;
+  padding: 4px;
+  margin: auto;
+  height: 40px;
+  width: 100%;
+  border-radius: 4px;
+}
+section {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  width: 50%;
+  height: 40%;
+  margin: auto;
+  border: 2px solid rgb(204, 246, 253);
+  margin-top: 30px;
+  border-radius: 10px;
+  position: relative;
+}
+h1 {
+  text-align: center;
+  font-size: 40px;
+  background-color: rgb(98, 124, 255);
+  color: black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 5px;
+  text-shadow: 1px 1px 2px black;
+  font-weight: lighter;
+}
+.title,
+#data {
+  width: 100%;
+  height: 20%;
+  margin: auto;
+  padding: 4px;
+  resize: none;
+  text-indent: 10px;
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  border-radius: 4px;
+  outline: none;
+  background-color: rgb(248, 247, 246);
+}
+.btn {
+  /* position: absolute; */
+  /* bottom: 0; */
+  margin-bottom: 5px;
+  margin-left: 3px;
+}
+#add,
+#clear {
+  padding: 8px;
+  background-color: #7ac5ff;
+  border-radius: 6px;
+  border: 4px solid rgb(204, 246, 253);
+  cursor: pointer;
+  color: rgb(3, 3, 3);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 900;
+}
+#add:active,
+#clear:active {
+  color: white;
+  border: 4px solid blue;
+  transition: 0.2s;
+}
+
+.addNote {
+  width: 80%;
+  margin: auto;
+}
+
+#note-btn {
+  position: absolute;
+  right: 0;
+  width: 5%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  margin-right: 15px;
+}
+#note-head {
+  position: relative;
+  width: 80%;
+  height: 10%;
+  margin: auto;
+  margin-bottom: 4px;
+}
+.card {
+  width: 80%;
+  height: 30%;
+  margin: auto;
+  background-color: rgb(255, 230, 230);
+  color: black;
+  margin-bottom: 13px;
+  padding: 5px;
+  font-family: "Square Peg", cursive;
+  font-size: 35px;
+}
+
+.lineAdd {
+  text-decoration: line-through;
+}
+
+@media (max-width: 513px) {
+  ul:nth-child(1) {
+    display: none;
+  }
+  ul:nth-child(2) {
+    margin: auto;
+    width: 60%;
+  }
+  .container {
+    width: 100%;
+  }
+}

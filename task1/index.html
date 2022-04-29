@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href=""> Contact us</a></li>
+            </ul>
+            <ul>
+                <input type="text" id="search" placeholder="search tasks">
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <h1>Add Note Here</h1>
+            <hr>
+            <input type="text" placeholder="Title of the note" class="title" title="click to add title">
+            <textarea name="data" id="data" cols="30" rows="5"></textarea>
+            <div class="btn">
+                <button id="clear" onclick="clearAll()">Clear All</button>
+                <button id="add" onclick="addNote()">Add Note</button>
+            </div>
+        </div>
+        <div id="addNote"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
