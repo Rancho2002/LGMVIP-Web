@@ -1,4 +1,7 @@
+//* this is for the automatic number input, remvoing "enter valid digit" message without removing it manually
 let wrong = false;
+
+//* creating append function
 
 function setValue(value) {
   if (wrong === false) {
@@ -9,6 +12,7 @@ function setValue(value) {
     wrong = false;
   }
 }
+
 function allClear() {
   document.querySelector("#inp").value = "";
 }
